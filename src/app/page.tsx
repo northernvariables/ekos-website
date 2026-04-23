@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BarChart3, ClipboardCheck, TrendingUp, Users } from "lucide-react";
+import HeartbeatLine from "@/components/heartbeat-line";
 
 /* ------------------------------------------------------------------ */
 /*  Mock Data                                                          */
@@ -122,6 +123,9 @@ export default function Home() {
         />
         {/* Subtle diagonal gradient overlay */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-navy via-transparent to-navy-muted opacity-80" />
+
+        {/* Animated heartbeat pulse line */}
+        <HeartbeatLine />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-28 sm:py-36 lg:py-44 text-center">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
